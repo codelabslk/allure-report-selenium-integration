@@ -13,6 +13,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
 
 public class TC_WikipediaSearchTest {
 	private WebDriver driver;
@@ -29,8 +32,10 @@ public class TC_WikipediaSearchTest {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
+	
+	@Severity(SeverityLevel.CRITICAL)
 	@Description("Test to search wikipedia site for a term and validate the search result heading")
-	@Test
+	@Test (description = "TC-2000 ::: Search Wikipedia For Search Term")
 	public void searchWikipedia() throws Exception {
 		
 		driver.get(baseUrl);

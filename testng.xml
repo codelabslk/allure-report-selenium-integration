@@ -8,6 +8,12 @@
 					<include name="searchWikipedia" />
 				</methods>
 			</class>
+			<class
+				name="com.codelabs.examples.selenium.tests.TC_PercentageCalculatorTest">
+				<methods>
+					<include name="checkPercentageCalculation" />
+				</methods>
+			</class>
 		</classes>
 	</test>
 </suite>
